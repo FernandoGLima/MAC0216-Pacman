@@ -1,0 +1,32 @@
+Fernando Gouveia Lima     NUSP: 13672710    EMAIL: FernandoLimaBusiness@gmail.com
+
+DESCRIÇÃO:
+O programa consiste na resolução dos problemas propostos pelo Ep1 da disciplina MAC0216, do curso bacharelado de ciência da
+computção do IME USP-(Instituto de Matemática e Estatística da Universidade de São Paulo), ministrada pelo Daniel Macedo
+Batista.
+O programa é um jogo de PAC-MAN quase clássico. Este jogo consiste em o usuário controlar o PAC-MAN, ou seja, movimenta-lo
+pelo labirinto, este é representado pelo caracter 'C' e o principal objetivo do jogo é coletar todos os PAC-DOTS que são
+representados pelo caracter '.' sem morrer. Dentro do labirinto, há fantasmas ( a quantidade depende da instância ) que são
+representados pelo caracter 'F', eles se movimentam de maneira pseudo-aleatória. Caso o PAC-MAN e o fantasma se choquem, 
+isso é considerado que o PAC-MAN morre e portanto o usuário perde a partida. Caso o usuário consiga coletar todos os pac-dots
+a partida também acaba, porém com vitória para o usuário.
+
+COMO EXECUTAR:
+Primeiramente, o usuário deve-se encontrar no mesmo diretório onde se encontra os arquivos, para ir até o diretório basta
+digitar no prompt "cd /mnt/NomedoDiretório". Após isto, deve-se digitar "make all", isto irá compilar todas as classes 
+auxiliares e o programa principal, deixando-o pronto para executá-lo. Para executar , basta digitar "./ep4_main <nome_de_
+um_arquivo.txt>. Este arquivo txt, deve conter um tabuleiro pré definido com fantasmas, pac-dots, paredes e espaços em 
+branco.
+
+TESTES:
+Há dois testes neste programa, o primeiro cria um pacman, ou seja, recebe status vivo (representado pelo numero 1), e 
+depois uma chama um metodo que mata ele tornando o status dele de morto (representado pelo numero 0). O teste consiste em
+ver se o status dele esta realmente 0, ou seja morto. O segundo teste consiste pra ve se ele esta andando. Primeiramente
+cria-se um pacman dando suas coordenadas, depois chama um metodo que altera estas posicoes e verifica se realmente foi
+alterado.
+
+DEPENDÊNCIAS:
+Para compilar este programa em c++ é necessário o compilador g++ na versão 9.4.0.
+Este programa foi executado no sistema operacional Windows 10 64 bits, porém os comandos foram executados no 
+WSL - (Subsistema windows para Linux), este oferece um ambiente linux compativel ao sistema da microsoft de forma que possa
+ser executado programas nativos do sistema GNU/LINUX. A versão baixada é do Ubuntu 20.04.5LTS
